@@ -418,7 +418,7 @@
     <repository>
       <id>sonatype-joda-staging</id>
       <name>Sonatype OSS staging repository</name>
-      <url>http://localhost:8081/repository/joda-time-hibernate/</url>
+      <url>http://localhost:8081/repository/maven-releases/</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
