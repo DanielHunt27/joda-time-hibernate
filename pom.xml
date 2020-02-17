@@ -94,6 +94,11 @@
           </execution>
         </executions>
         <configuration>
+          <format>{0}, {1,date,yyyy-MM-dd HH:mm:ss}</format>
+          <items>
+            <item>scmVersion</item>
+            <item>timestamp</item>
+          </items>
           <doCheck>true</doCheck>
           <doUpdate>true</doUpdate>
         </configuration>
@@ -108,6 +113,10 @@
               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
             </manifest>
+            <manifestEntries>
+              <Implementation-Build>${buildNumber}</Implementation-Build>
+              <version-number>${project.version}</version-number>
+            </manifestEntries>
           </archive>
         </configuration>
       </plugin>
